@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Playlist Lab";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <img src="~/img/headphones.jpeg" height="200" />
+    <p>
+        Welcome to the Playlist Lab. If you want a perfectly curated playlist to your taste, then you found the right place.
+        I will make you a pljaylist that plays your favorite artists, but also gives you some some new songs and artists to expose you
+        to a new world of music.
+    </p>
+</div>
+
+<h3>Get a Playlist</h3>
+<p>It takes me about an hour to make an hour long playlist. Input how long you want your playlist to be.</p>
+<div style="width: 200px; height: 50px; border: 2px solid black; padding: 10px; margin: 10px; background-color: white;">
+<h6>Price Per Hour $50</h6>
+</div>
+
+<form id="playlistForm">
+    <label for="playlistLength">Playlist Length (hours): </label>
+    <input type="number" id="playlistLength" required />
+    <!-- <button type="submit">Calculate Cost</button>-->
+    <button type="submit"class="button-sleek">Calculate Cost</button>
+
+</form>
+<div id="costDisplay"></div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>

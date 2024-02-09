@@ -1,0 +1,100 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+h1{
+    font-family: Consolas; 
+}
+
+header{
+    font-family: Consolas;
+}
+
+p{
+    font-family: Consolas; 
+}
+
+h2, h3{
+    font-family: Consolas;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* image hovering for a description of the artists*/
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    color: #000000; /* Black font color */
+    visibility: hidden;
+    width: 100%;
+    transition: visibility 0.2s, opacity 0.2s linear;
+    opacity: 0;
+}
+
+.image-container:hover .text-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+h5, h6{
+    font-family: Consolas;
+    font-weight: bold;
+}
+
+h4, label, input, button{
+    font-family: Consolas;
+}
+
+.button-sleek {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 2px solid #000000; /* Black border */
+    padding: 5px 5px; /* Reduced padding around the text */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allow setting dimensions */
+    font-size: 14px; /* Reduced text size */
+    transition: all 0.3s; /* Smooth transition for background and color change */
+    cursor: pointer; /* Change mouse cursor to pointer */
+    border-radius: 5px; /* Slightly rounded corners */
+    height: 38px; /* Adjust height to match default input, may need fine-tuning */
+    box-sizing: border-box; /* Include padding and border in the element's total height and width */
+}
+
+    .button-sleek:hover {
+        background-color: #000000; /* Black background on hover */
+        color: #ffffff; /* White text on hover */
+    }
+
+div {
+    font-family: Consolas;
+}
+
+
+
+
+
+
