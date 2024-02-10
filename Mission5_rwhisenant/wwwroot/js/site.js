@@ -6,13 +6,12 @@ $(document).ready(function () {
         var hours = $('#playlistLength').val();
         var costPerHour = 50;
 
-        // Check if the entered hours are a positive number
         if ($.isNumeric(hours) && hours > 0) {
             var totalCost = hours * costPerHour;
-            $('#costDisplay').text('Total Cost: $' + totalCost);
+
+            $('#costDisplay').val(totalCost); // This now correctly targets the input box.
         } else {
-            // Display an error message or handle the error as appropriate
-            $('#costDisplay').text('Please enter a positive number for the length of the playlist.');
+            alert('Please enter a positive number for the length of the playlist.'); // Example error handling
         }
     });
 });

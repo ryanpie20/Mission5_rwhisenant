@@ -15,16 +15,16 @@
 <h3>Get a Playlist</h3>
 <p>It takes me about an hour to make an hour long playlist. Input how long you want your playlist to be.</p>
 <label>Price Per Hour ($)</label>
-<input type="text" id="costPerHour" name="costPerHour" value="50" readonly/>
+<input type="text" id="costPerHour" name="costPerHour" value="50" readonly />
 
 <form id="playlistForm">
     <label for="playlistLength">Playlist Length (hours): </label>
     <input type="number" id="playlistLength" required />
-    <!-- <button type="submit">Calculate Cost</button>-->
-    <button type="submit"class="button-sleek">Calculate Cost</button>
-
+    <button type="submit" class="button-sleek">Calculate Cost</button>
 </form>
-<div id="costDisplay"></div>
+
+<label>Total Cost ($)</label>
+<input type="text" id="costDisplay" readonly />
 
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
